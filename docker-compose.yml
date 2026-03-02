@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  playwright-tests:
+    build: .
+    container_name: e2e-tests
+    volumes:
+      - ./playwright-report:/app/playwright-report
+      - ./test-results:/app/test-results
